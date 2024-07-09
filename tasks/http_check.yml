@@ -1,0 +1,14 @@
+- name: check httpd server
+  uri:
+    url: "{{ web_url }}"
+    status_code: 200
+    return_content: yes
+  register: result
+
+- name: Debug the response content and status code
+  debug:
+    msg:
+      - content={{ result.content }}
+      - status={{ result.status }}
+
+

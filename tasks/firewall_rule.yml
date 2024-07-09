@@ -1,0 +1,7 @@
+- name: firewall rule
+  firewalld:
+      service: http
+      state: enabled
+      permanent: true
+      immediate: true
+

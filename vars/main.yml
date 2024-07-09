@@ -1,0 +1,4 @@
+---
+# vars file for http-install
+http_content: "THIS IS WORKERNODE FOR ANSIBLE"
+web_url: http://workernode1.example.com/

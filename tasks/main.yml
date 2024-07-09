@@ -1,0 +1,8 @@
+---
+# tasks file for http-install
+- import_tasks: httpd_install.yml
+- import_tasks: httpd_service.yml
+- import_tasks: httpd_config.yml
+- import_tasks: firewall_rule.yml
+- import_tasks: http_check.yml
+
